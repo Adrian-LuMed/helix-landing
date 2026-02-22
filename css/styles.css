@@ -886,286 +886,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
 }
 
-/* Install Section */
-.install {
-  padding: 120px 0;
-}
-
-/* Mode Toggle */
-.mode-toggle {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 32px;
-  background: var(--bg-secondary);
-  padding: 6px;
-  border-radius: var(--radius-lg);
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid var(--border-subtle);
-}
-
-.mode-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 24px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  background: transparent;
-  border: none;
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.mode-btn:hover {
-  color: var(--text-primary);
-  background: var(--bg-elevated);
-}
-
-.mode-btn.active {
-  color: var(--text-primary);
-  background: var(--accent-indigo);
-}
-
-.mode-btn.active svg {
-  color: white;
-}
-
-.mode-btn:focus-visible {
-  outline: 2px solid var(--accent-indigo);
-  outline-offset: 2px;
-}
-
-/* Mode Content */
-.mode-content {
-  display: none;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.mode-content.active {
-  display: block;
-}
-
-/* Agent Instructions */
-.agent-instructions {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-default);
-  border-radius: var(--radius-lg);
-  padding: 32px;
-}
-
-.agent-step {
-  display: flex;
-  gap: 20px;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.agent-step:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.agent-step:first-child {
-  padding-top: 0;
-}
-
-.agent-step-number {
-  width: 32px;
-  height: 32px;
-  background: var(--gradient-primary);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-
-.agent-step-content {
-  flex: 1;
-}
-
-.agent-step-content h4 {
-  font-size: 1rem;
-  margin-bottom: 8px;
-  color: var(--text-primary);
-}
-
-.agent-step-content code {
-  display: block;
-  background: var(--bg-primary);
-  padding: 10px 14px;
-  border-radius: var(--radius-sm);
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  color: var(--accent-cyan);
-  margin: 8px 0;
-  border: 1px solid var(--border-subtle);
-}
-
-.agent-step-content p {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin: 6px 0;
-}
-
-.agent-step-content p code {
-  display: inline;
-  padding: 2px 6px;
-  margin: 0;
-  font-size: 0.85rem;
-}
-
-.agent-note {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-top: 20px;
-  padding: 16px;
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  border-radius: var(--radius-md);
-  font-size: 0.85rem;
-  color: var(--text-secondary);
-}
-
-.agent-note svg {
-  flex-shrink: 0;
-  color: var(--accent-indigo);
-  margin-top: 2px;
-}
-
-.code-block {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-default);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.code-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 16px 24px;
-  background: var(--bg-tertiary);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.code-tabs {
-  display: flex;
-  gap: 16px;
-}
-
-.code-tab {
-  font-size: 0.85rem;
-  color: var(--text-tertiary);
-  padding: 4px 8px;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-}
-
-.code-tab.active {
-  color: var(--text-primary);
-  background: var(--bg-elevated);
-}
-
-.code-copy {
-  font-size: 0.8rem;
-  color: var(--text-tertiary);
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
-  transition: all 0.2s;
-}
-
-.code-copy:hover {
-  background: var(--bg-elevated);
-  color: var(--text-secondary);
-}
-
-.code-copy:focus-visible {
-  outline: 2px solid var(--accent-indigo);
-  outline-offset: 2px;
-}
-
-.code-body {
-  padding: 24px;
-  overflow-x: auto;
-}
-
-.code-body pre {
-  font-family: var(--font-mono);
-  font-size: 0.9rem;
-  line-height: 1.8;
-  color: var(--text-primary);
-}
-
-.code-body .comment {
-  color: var(--text-tertiary);
-}
-
-.code-body .command {
-  color: var(--accent-cyan);
-}
-
-.code-body .string {
-  color: var(--accent-green);
-}
-
-/* CTA Section */
-.cta {
-  padding: 120px 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.cta::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 800px;
-  height: 400px;
-  background: radial-gradient(ellipse at center bottom, var(--accent-indigo-glow), transparent 70%);
-  pointer-events: none;
-}
-
-.cta-content {
-  position: relative;
-  z-index: 1;
-}
-
-.cta h2 {
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
-  margin-bottom: 16px;
-}
-
-.cta p {
-  color: var(--text-secondary);
-  font-size: 1.15rem;
-  margin-bottom: 40px;
-}
-
-.cta-actions {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 /* Footer */
 .footer {
   padding: 48px 0;
@@ -1220,9 +940,36 @@ h1, h2, h3, h4, h5, h6 {
   outline-offset: 2px;
 }
 
+.footer-attribution {
+  color: var(--text-tertiary);
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+  padding-top: 16px;
+  margin-top: 8px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.footer-attribution a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-attribution a:hover {
+  color: var(--accent-indigo);
+}
+
+.footer-attribution a:focus-visible {
+  outline: 2px solid var(--accent-indigo);
+  outline-offset: 2px;
+}
+
 .footer-copy {
   color: var(--text-tertiary);
   font-size: 0.85rem;
+  width: 100%;
+  text-align: center;
 }
 
 /* Screenshots Gallery */
@@ -1439,15 +1186,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .hero-actions .btn {
-    width: 100%;
-  }
-  
-  .cta-actions {
-    flex-direction: column;
-    padding: 0 16px;
-  }
-  
-  .cta-actions .btn {
     width: 100%;
   }
 }
