@@ -129,9 +129,21 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
+  
+  <!-- Performance Hints: Preconnect & DNS-Prefetch -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://github.com">
+  <link rel="dns-prefetch" href="https://discord.com">
+  
+  <!-- Preload Critical Assets -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="preload" href="images/dashboard-overview.png" as="image" type="image/png">
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -316,7 +328,7 @@
                 <span class="screenshot-dot green"></span>
               </div>
             </div>
-            <img src="images/dashboard-overview.png" alt="Helix main dashboard showing statistics cards with 3 active sessions, 5 pending goals, 1 completed task, projects sidebar with collapsible folders, and goal progress bars with priority labels">
+            <img src="images/dashboard-overview.png" alt="Helix main dashboard showing statistics cards with 3 active sessions, 5 pending goals, 1 completed task, projects sidebar with collapsible folders, and goal progress bars with priority labels" loading="lazy">
           </div>
           <h3 id="screenshot-dashboard">Dashboard Overview</h3>
           <p>See all your goals, active agents, and project status at a glance</p>
@@ -331,7 +343,7 @@
                 <span class="screenshot-dot green"></span>
               </div>
             </div>
-            <img src="images/condo-context.png" alt="Helix project detail view displaying project info with 3 goals and 6 of 10 tasks complete, workspace path with GitHub link, goals list showing task dependencies and status, and activity timeline with recent updates">
+            <img src="images/condo-context.png" alt="Helix project detail view displaying project info with 3 goals and 6 of 10 tasks complete, workspace path with GitHub link, goals list showing task dependencies and status, and activity timeline with recent updates" loading="lazy">
           </div>
           <h3 id="screenshot-condo">Condo Context</h3>
           <p>View project details with goals graph, workspace status, and activity timeline</p>
@@ -346,7 +358,7 @@
                 <span class="screenshot-dot green"></span>
               </div>
             </div>
-            <img src="images/agents-overview.png" alt="Helix agents overview showing 3 total agents, 4 active sessions, 45% completion rate, active work list with agent tasks and status indicators, and workload distribution cards for Helix Prime, App Helper, and Scholar agents">
+            <img src="images/agents-overview.png" alt="Helix agents overview showing 3 total agents, 4 active sessions, 45% completion rate, active work list with agent tasks and status indicators, and workload distribution cards for Helix Prime, App Helper, and Scholar agents" loading="lazy">
           </div>
           <h3 id="screenshot-agents">Agents Overview</h3>
           <p>Monitor agent activity, workload distribution, and active tasks</p>
@@ -361,7 +373,7 @@
                 <span class="screenshot-dot green"></span>
               </div>
             </div>
-            <img src="images/search-view.png" alt="Helix global search interface with search bar showing 13 results, recent goals list including CI/CD pipeline and voice recording tasks, and recent sessions from sub-agents and chat channels">
+            <img src="images/search-view.png" alt="Helix global search interface with search bar showing 13 results, recent goals list including CI/CD pipeline and voice recording tasks, and recent sessions from sub-agents and chat channels" loading="lazy">
           </div>
           <h3 id="screenshot-search">Global Search</h3>
           <p>Search across all goals, sessions, and messages instantly</p>
