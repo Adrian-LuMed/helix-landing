@@ -44,6 +44,83 @@
   <meta name="twitter:image" content="https://helix.openclaw.ai/images/dashboard-overview.png">
   <meta name="twitter:image:alt" content="Helix Dashboard showing project goals, agent tasks, and multi-agent orchestration interface">
   
+  <!-- JSON-LD Structured Data -->
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://openclaw.ai/#organization",
+    "name": "OpenClaw",
+    "url": "https://openclaw.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://helix.openclaw.ai/images/helix-logo.svg",
+      "width": 512,
+      "height": 512
+    },
+    "sameAs": [
+      "https://github.com/openclaw",
+      "https://twitter.com/openclawai",
+      "https://discord.com/invite/clawd"
+    ],
+    "description": "OpenClaw develops open-source AI agent orchestration tools and platforms."
+  }
+  </script>
+  
+  <!-- WebSite Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://helix.openclaw.ai/#website",
+    "name": "Helix",
+    "url": "https://helix.openclaw.ai",
+    "description": "A goals-first multi-agent dashboard with an embedded apps platform.",
+    "publisher": {
+      "@id": "https://openclaw.ai/#organization"
+    },
+    "inLanguage": "en-US"
+  }
+  </script>
+  
+  <!-- SoftwareApplication Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://helix.openclaw.ai/#software",
+    "name": "Helix",
+    "description": "A goals-first multi-agent dashboard with an embedded apps platform. Orchestrate AI agent teams with git-backed workspaces. Self-hosted and open source.",
+    "url": "https://helix.openclaw.ai",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Linux, macOS, Windows",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@id": "https://openclaw.ai/#organization"
+    },
+    "isAccessibleForFree": true,
+    "license": "https://opensource.org/licenses/MIT",
+    "screenshot": "https://helix.openclaw.ai/images/dashboard-overview.png",
+    "featureList": [
+      "Goals-first project management",
+      "Multi-agent orchestration",
+      "Git-backed workspaces",
+      "Embedded apps platform",
+      "Self-hosted deployment",
+      "Open source"
+    ],
+    "softwareRequirements": "Node.js 18+",
+    "downloadUrl": "https://github.com/Adrian-LuMed/helix",
+    "installUrl": "https://github.com/Adrian-LuMed/helix#installation",
+    "releaseNotes": "https://github.com/Adrian-LuMed/helix/releases"
+  }
+  </script>
+  
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
