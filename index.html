@@ -43,10 +43,12 @@
   <!-- Skip Link for Accessibility -->
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- Navigation -->
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a href="#" class="nav-logo">
+  <!-- Site Header -->
+  <header role="banner">
+    <!-- Navigation -->
+    <nav class="nav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a href="#" class="nav-logo" aria-label="Helix - Home">
         <svg viewBox="0 0 48 64" width="36" height="48">
           <defs>
             <linearGradient id="nav-s1" x1="0" y1="0" x2="0" y2="1">
@@ -76,6 +78,7 @@
       </div>
     </div>
   </nav>
+  </header>
 
   <!-- Main Content -->
   <main id="main">
@@ -177,8 +180,9 @@
   </section>
 
   <!-- Screenshot Showcase -->
-  <section class="showcase">
+  <section class="showcase" aria-labelledby="showcase-title">
     <div class="container">
+      <h2 id="showcase-title" class="visually-hidden">Dashboard Preview</h2>
       <div class="showcase-window">
         <div class="showcase-titlebar">
           <div class="showcase-dots">
@@ -198,19 +202,19 @@
   </section>
 
   <!-- Screenshots Gallery -->
-  <section class="screenshots-gallery" id="screenshots">
+  <section class="screenshots-gallery" id="screenshots" aria-labelledby="screenshots-title">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Screenshots</span>
-        <h2 class="section-title">See Helix in Action</h2>
+        <h2 id="screenshots-title" class="section-title">See Helix in Action</h2>
         <p class="section-subtitle">A clean, responsive interface designed for managing AI agent teams</p>
       </div>
       
       <div class="screenshots-grid">
-        <div class="screenshot-card">
+        <article class="screenshot-card" aria-labelledby="screenshot-dashboard">
           <div class="screenshot-window">
             <div class="screenshot-titlebar">
-              <div class="screenshot-dots">
+              <div class="screenshot-dots" aria-hidden="true">
                 <span class="screenshot-dot red"></span>
                 <span class="screenshot-dot yellow"></span>
                 <span class="screenshot-dot green"></span>
@@ -218,14 +222,14 @@
             </div>
             <img src="images/dashboard-overview.png" alt="Dashboard with stat cards, sidebar, and project board">
           </div>
-          <h3>Dashboard Overview</h3>
+          <h3 id="screenshot-dashboard">Dashboard Overview</h3>
           <p>See all your goals, active agents, and project status at a glance</p>
-        </div>
+        </article>
         
-        <div class="screenshot-card">
+        <article class="screenshot-card" aria-labelledby="screenshot-condo">
           <div class="screenshot-window">
             <div class="screenshot-titlebar">
-              <div class="screenshot-dots">
+              <div class="screenshot-dots" aria-hidden="true">
                 <span class="screenshot-dot red"></span>
                 <span class="screenshot-dot yellow"></span>
                 <span class="screenshot-dot green"></span>
@@ -233,14 +237,14 @@
             </div>
             <img src="images/condo-context.png" alt="Condo context with goals graph, workspace, and timeline">
           </div>
-          <h3>Condo Context</h3>
+          <h3 id="screenshot-condo">Condo Context</h3>
           <p>View project details with goals graph, workspace status, and activity timeline</p>
-        </div>
+        </article>
         
-        <div class="screenshot-card">
+        <article class="screenshot-card" aria-labelledby="screenshot-agents">
           <div class="screenshot-window">
             <div class="screenshot-titlebar">
-              <div class="screenshot-dots">
+              <div class="screenshot-dots" aria-hidden="true">
                 <span class="screenshot-dot red"></span>
                 <span class="screenshot-dot yellow"></span>
                 <span class="screenshot-dot green"></span>
@@ -248,14 +252,14 @@
             </div>
             <img src="images/agents-overview.png" alt="Agents overview with active work and workload cards">
           </div>
-          <h3>Agents Overview</h3>
+          <h3 id="screenshot-agents">Agents Overview</h3>
           <p>Monitor agent activity, workload distribution, and active tasks</p>
-        </div>
+        </article>
         
-        <div class="screenshot-card">
+        <article class="screenshot-card" aria-labelledby="screenshot-search">
           <div class="screenshot-window">
             <div class="screenshot-titlebar">
-              <div class="screenshot-dots">
+              <div class="screenshot-dots" aria-hidden="true">
                 <span class="screenshot-dot red"></span>
                 <span class="screenshot-dot yellow"></span>
                 <span class="screenshot-dot green"></span>
@@ -263,117 +267,117 @@
             </div>
             <img src="images/search-view.png" alt="Global search across goals and sessions">
           </div>
-          <h3>Global Search</h3>
+          <h3 id="screenshot-search">Global Search</h3>
           <p>Search across all goals, sessions, and messages instantly</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section class="features" id="features">
+  <section class="features" id="features" aria-labelledby="features-title">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Features</span>
-        <h2 class="section-title">Built for Autonomous AI Teams</h2>
+        <h2 id="features-title" class="section-title">Built for Autonomous AI Teams</h2>
         <p class="section-subtitle">Everything you need to orchestrate multi-agent projects, from planning to deployment.</p>
       </div>
       
       <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">🎯</div>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🎯</div>
           <h3>Goals & Tasks</h3>
           <p>Structured goals with task breakdowns. Real-time progress tracking.</p>
-        </div>
+        </article>
         
-        <div class="feature-card">
-          <div class="feature-icon">🏗️</div>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🏗️</div>
           <h3>Condos (Projects)</h3>
           <p>Project workspaces with isolated git repos, branches, and worktrees.</p>
-        </div>
+        </article>
         
-        <div class="feature-card">
-          <div class="feature-icon">👥</div>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">👥</div>
           <h3>Role-Based Agents</h3>
           <p>PM, frontend, backend, designer, QA. Auto-spawn sessions per task.</p>
-        </div>
+        </article>
         
-        <div class="feature-card">
-          <div class="feature-icon">💬</div>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">💬</div>
           <h3>Real-Time Chat</h3>
           <p>Telegram, Discord, or web. Auto-routing to the right project.</p>
-        </div>
+        </article>
         
-        <div class="feature-card">
-          <div class="feature-icon">🧩</div>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🧩</div>
           <h3>Embedded Apps</h3>
           <p>Extend with custom tools and integrations inside Helix.</p>
-        </div>
+        </article>
         
-        <div class="feature-card">
-          <div class="feature-icon">🔗</div>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔗</div>
           <h3>GitHub Integration</h3>
           <p>Auto-create repos, push code, open PRs. Full automation.</p>
-        </div>
+        </article>
         
-        <div class="feature-card">
-          <div class="feature-icon">🌙</div>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🌙</div>
           <h3>Dark Theme</h3>
           <p>Clean, eye-friendly interface for long sessions.</p>
-        </div>
+        </article>
         
-        <div class="feature-card">
-          <div class="feature-icon">📱</div>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📱</div>
           <h3>Mobile Ready</h3>
           <p>Full functionality on any device.</p>
-        </div>
+        </article>
         
-        <div class="feature-card">
-          <div class="feature-icon">🔒</div>
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔒</div>
           <h3>Self-Hosted</h3>
           <p>Your code, your keys, your data. No cloud dependencies.</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Why Helix Section -->
-  <section class="why-helix" id="why-helix">
+  <section class="why-helix" id="why-helix" aria-labelledby="why-helix-title">
     <div class="container">
       <div class="why-grid">
         <div class="why-content">
           <span class="section-label">Why Helix</span>
-          <h2>Agent orchestration that<br><span class="gradient-text">actually works</span></h2>
+          <h2 id="why-helix-title">Agent orchestration that<br><span class="gradient-text">actually works</span></h2>
           <p>
             Goals-first architecture. Every agent knows the plan, their role, and how their work fits together.
           </p>
-          <ul class="why-list">
+          <ul class="why-list" role="list">
             <li>
-              <span class="why-list-check">
+              <span class="why-list-check" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
               </span>
               <span>Structured goals prevent scope creep and confusion</span>
             </li>
             <li>
-              <span class="why-list-check">
+              <span class="why-list-check" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
               </span>
               <span>Git-backed workspaces mean every change is tracked</span>
             </li>
             <li>
-              <span class="why-list-check">
+              <span class="why-list-check" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
               </span>
               <span>Role separation keeps agents focused on their domain</span>
             </li>
             <li>
-              <span class="why-list-check">
+              <span class="why-list-check" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
               </span>
               <span>Real-time visibility into what every agent is doing</span>
             </li>
             <li>
-              <span class="why-list-check">
+              <span class="why-list-check" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"/></svg>
               </span>
               <span>No vendor lock-in — run anywhere, use any LLM</span>
@@ -422,56 +426,56 @@
   </section>
 
   <!-- How It Works Section -->
-  <section class="how-it-works" id="how-it-works">
+  <section class="how-it-works" id="how-it-works" aria-labelledby="how-it-works-title">
     <div class="container">
       <div class="section-header">
         <span class="section-label">How It Works</span>
-        <h2 class="section-title">From idea to deployed code</h2>
+        <h2 id="how-it-works-title" class="section-title">From idea to deployed code</h2>
         <p class="section-subtitle">Four steps to autonomous project completion.</p>
       </div>
       
-      <div class="steps-container">
-        <div class="step">
-          <div class="step-number">1</div>
+      <ol class="steps-container" role="list">
+        <li class="step">
+          <div class="step-number" aria-hidden="true">1</div>
           <div class="step-content">
             <h3>Describe your project</h3>
             <p>Tell the PM agent what to build. It creates goals, tasks, and assigns roles.</p>
           </div>
-        </div>
+        </li>
         
-        <div class="step">
-          <div class="step-number">2</div>
+        <li class="step">
+          <div class="step-number" aria-hidden="true">2</div>
           <div class="step-content">
             <h3>Review and approve</h3>
             <p>Adjust the plan if needed. Click "Kickoff" to spawn worker agents.</p>
           </div>
-        </div>
+        </li>
         
-        <div class="step">
-          <div class="step-number">3</div>
+        <li class="step">
+          <div class="step-number" aria-hidden="true">3</div>
           <div class="step-content">
             <h3>Agents work autonomously</h3>
             <p>Each agent works in their own branch, commits code, and coordinates through shared context.</p>
           </div>
-        </div>
+        </li>
         
-        <div class="step">
-          <div class="step-number">4</div>
+        <li class="step">
+          <div class="step-number" aria-hidden="true">4</div>
           <div class="step-content">
             <h3>Merge and deploy</h3>
             <p>Review, merge to main, deploy. Done.</p>
           </div>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </section>
 
   <!-- Install Section -->
-  <section class="install" id="install">
+  <section class="install" id="install" aria-labelledby="install-title">
     <div class="container">
       <div class="section-header">
         <span class="section-label">Get Started</span>
-        <h2 class="section-title">Installation</h2>
+        <h2 id="install-title" class="section-title">Installation</h2>
         <p class="section-subtitle">No build step required. Clone, configure, run.</p>
       </div>
       
@@ -500,9 +504,9 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="cta">
+  <section class="cta" aria-labelledby="cta-title">
     <div class="container cta-content">
-      <h2>Ready to orchestrate your <span class="gradient-text">AI team</span>?</h2>
+      <h2 id="cta-title">Ready to orchestrate your <span class="gradient-text">AI team</span>?</h2>
       <p>Star the repo and get started.</p>
       
       <div class="cta-actions">
@@ -521,10 +525,10 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container footer-inner">
-      <a href="#" class="footer-logo">
-        <svg viewBox="0 0 48 64" width="28" height="36">
+      <a href="#" class="footer-logo" aria-label="Helix - Home">
+        <svg viewBox="0 0 48 64" width="28" height="36" aria-hidden="true">
           <defs>
             <linearGradient id="ft-s1" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stop-color="#818cf8"/>
@@ -541,15 +545,15 @@
         <span class="footer-logo-text">Helix</span>
       </a>
       
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer navigation">
         <a href="https://github.com/Adrian-LuMed/helix" target="_blank">GitHub</a>
         <a href="https://github.com/Adrian-LuMed/helix/blob/master/docs/SETUP.md" target="_blank">Documentation</a>
         <a href="https://discord.gg/clawd" target="_blank">Discord</a>
         <a href="https://github.com/Adrian-LuMed/helix/issues" target="_blank">Issues</a>
-      </div>
+      </nav>
       
       <p class="footer-copy">
-        Open source under MIT License. Built with ❤️ by the OpenClaw community.
+        <small>Open source under MIT License. Built with <span aria-label="love">❤️</span> by the OpenClaw community.</small>
       </p>
     </div>
   </footer>
