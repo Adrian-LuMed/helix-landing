@@ -3,7 +3,7 @@
 **Auditor:** Designer Agent  
 **Date:** 2026-02-20  
 **Files Reviewed:** `index.html`, `css/styles.css`  
-**Reference Screenshots:** `/images/dashboard-overview.png`, `/images/condo-context.png`, `/images/agents-overview.png`
+**Reference Screenshots:** `/images/dashboard-overview.png`, `/images/strand-context.png`, `/images/agents-overview.png`
 
 ---
 

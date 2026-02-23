@@ -13,7 +13,7 @@ Analysis of all Helix documentation to identify gaps for a seamless fresh instal
 | GitHub repo creation | `lib/github.js` | ✅ Works |
 | Auto-collaborator invite | `lib/github.js` | ✅ Works |
 | Workspace/worktree creation | `lib/workspace-manager.js` | ✅ Works |
-| Agent Account mode | `condos-handlers.js` | ✅ Works |
+| Agent Account mode | `strands-handlers.js` | ✅ Works |
 | Services Settings UI | Dashboard Settings | ✅ Works |
 | `config.setService` RPC | `config-handlers.js` | ✅ Works |
 
@@ -25,7 +25,7 @@ Analysis of all Helix documentation to identify gaps for a seamless fresh instal
 
 **Missing:**
 - No mention of GitHub integration
-- No explanation that condos auto-create repos when GitHub is configured
+- No explanation that strands auto-create repos when GitHub is configured
 - No PM-as-agent workflow (only UI-based workflow described)
 - "Click Create Tasks" and "Start Goal" references UI, not agent tools
 
@@ -35,19 +35,19 @@ Analysis of all Helix documentation to identify gaps for a seamless fresh instal
 
 When the PM is an agent (not human in UI):
 
-1. Create condo via `condos.create` RPC
+1. Create strand via `strands.create` RPC
    - If GitHub agent account configured → repo auto-created
    - Manager auto-invited as collaborator
 
-2. Create goals with `condo_create_goal` tool
-3. Add tasks with `condo_add_task`
-4. Spawn workers with `condo_spawn_task`
+2. Create goals with `strand_create_goal` tool
+3. Add tasks with `strand_add_task`
+4. Spawn workers with `strand_spawn_task`
 ```
 
 ### 2.2 `docs/SKILL-PM.md`
 
 **Missing:**
-- No mention of `condo_create_goal`, `condo_spawn_task` tools
+- No mention of `strand_create_goal`, `strand_spawn_task` tools
 - Only describes markdown plan proposals
 - No autonomous PM execution flow
 
@@ -57,8 +57,8 @@ When the PM is an agent (not human in UI):
 
 When operating autonomously (not waiting for UI approval):
 
-1. Use `condo_create_goal` to create goals with initial tasks
-2. Use `condo_spawn_task` to spawn worker sessions
+1. Use `strand_create_goal` to create goals with initial tasks
+2. Use `strand_spawn_task` to spawn worker sessions
 3. Monitor via `goal_update` reports from workers
 4. Use `team.send` for inter-agent communication
 ```
@@ -82,7 +82,7 @@ After installation, configure in Settings:
    - Choose "Agent Account" mode for autonomous work
    - Fill in agentUsername, agentToken, managerUsername
    - Enable autoCollaborator
-4. [ ] Workspaces Directory (CLAWCONDOS_WORKSPACES_DIR env var)
+4. [ ] Workspaces Directory (HELIX_WORKSPACES_DIR env var)
 5. [ ] Optional: Vercel, Claude API, other services
 ```
 
@@ -123,7 +123,7 @@ The docs assume PM is a human using the UI:
 ### Missing State
 When PM is an agent (like Claudia), the workflow is different:
 - PM receives request via chat
-- PM must use RPC/tools to create condos, goals, spawn workers
+- PM must use RPC/tools to create strands, goals, spawn workers
 - No UI clicks involved
 
 ### Solution
@@ -135,17 +135,17 @@ Create `docs/SKILL-PM-AGENT.md` or add section to SKILL-PM.md:
 When you ARE the PM (not assisting a human PM):
 
 ### Creating a New Project
-1. Call `condos.create` via RPC with name and description
+1. Call `strands.create` via RPC with name and description
 2. GitHub repo auto-created if agent account configured
 3. Workspace initialized with git
 
 ### Planning Work
-1. Use `condo_create_goal` with tasks array
+1. Use `strand_create_goal` with tasks array
 2. Each goal gets its own worktree branch
 3. Tasks are ready for spawning
 
 ### Executing Work
-1. Use `condo_spawn_task` to assign agents to tasks
+1. Use `strand_spawn_task` to assign agents to tasks
 2. Workers receive SKILL-WORKER.md context
 3. Workers report via `goal_update`
 
@@ -168,7 +168,7 @@ When you ARE the PM (not assisting a human PM):
 
 ### Medium Priority
 - [ ] Create `docs/SKILL-PM-AGENT.md` - Dedicated agent PM doc
-- [ ] Add validation warning in UI when creating condo without GitHub config
+- [ ] Add validation warning in UI when creating strand without GitHub config
 - [ ] Add onboarding wizard to dashboard (multi-step setup)
 
 ### Nice to Have
@@ -194,7 +194,7 @@ When you ARE the PM (not assisting a human PM):
 
 The core functionality EXISTS and WORKS. The gap is documentation that explains:
 
-1. **How GitHub integration triggers** (on condo creation with agent account)
+1. **How GitHub integration triggers** (on strand creation with agent account)
 2. **What tools PM agents should use** (not just UI workflows)
 3. **First-run configuration checklist** (step-by-step setup)
 

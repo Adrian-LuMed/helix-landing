@@ -12,7 +12,7 @@ Completed SEO-friendly alt text audit for all images on the Helix landing page. 
 |-------|----------|--------------|
 | `dashboard-overview.png` | Showcase section | "Helix multi-agent dashboard displaying active sessions, pending goals, completed tasks, and project cards for DevOps Pipeline, Helix Dashboard, and Recipe Box with progress indicators" |
 | `dashboard-overview.png` | Screenshots gallery | "Helix main dashboard showing statistics cards with 3 active sessions, 5 pending goals, 1 completed task, projects sidebar with collapsible folders, and goal progress bars with priority labels" |
-| `condo-context.png` | Screenshots gallery | "Helix project detail view displaying project info with 3 goals and 6 of 10 tasks complete, workspace path with GitHub link, goals list showing task dependencies and status, and activity timeline with recent updates" |
+| `strand-context.png` | Screenshots gallery | "Helix project detail view displaying project info with 3 goals and 6 of 10 tasks complete, workspace path with GitHub link, goals list showing task dependencies and status, and activity timeline with recent updates" |
 | `agents-overview.png` | Screenshots gallery | "Helix agents overview showing 3 total agents, 4 active sessions, 45% completion rate, active work list with agent tasks and status indicators, and workload distribution cards for Helix Prime, App Helper, and Scholar agents" |
 | `search-view.png` | Screenshots gallery | "Helix global search interface with search bar showing 13 results, recent goals list including CI/CD pipeline and voice recording tasks, and recent sessions from sub-agents and chat channels" |
 

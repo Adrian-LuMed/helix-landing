@@ -38,7 +38,7 @@ Native lazy loading added to images not visible on initial viewport:
 |-------|----------|---------|
 | dashboard-overview.png | Showcase (hero) | **eager** (above fold) |
 | dashboard-overview.png | Screenshots gallery | `lazy` |
-| condo-context.png | Screenshots gallery | `lazy` |
+| strand-context.png | Screenshots gallery | `lazy` |
 | agents-overview.png | Screenshots gallery | `lazy` |
 | search-view.png | Screenshots gallery | `lazy` |
 

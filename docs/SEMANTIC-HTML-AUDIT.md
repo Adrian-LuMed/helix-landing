@@ -142,12 +142,12 @@ h1: Helix main title (hero)
 ├── h2: Dashboard Preview (visually hidden, showcase)
 ├── h2: See Helix in Action (screenshots)
 │   ├── h3: Dashboard Overview
-│   ├── h3: Condo Context
+│   ├── h3: Strand Context
 │   ├── h3: Agents Overview
 │   └── h3: Global Search
 ├── h2: Built for Autonomous AI Teams (features)
 │   ├── h3: Goals & Tasks
-│   ├── h3: Condos (Projects)
+│   ├── h3: Strands (Projects)
 │   ├── h3: Role-Based Agents
 │   ├── h3: Real-Time Chat
 │   ├── h3: Embedded Apps
